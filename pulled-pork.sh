@@ -3,7 +3,6 @@
 
 echo "*] Updating and Installing git ..."
 sudo apt-get update -y
-sudo apt-get install git
 
 echo "*] Install the PulledPork pre-requisites ..."
 sudo apt-get install -y libcrypt-ssleay-perl liblwp-useragent-determined-perl
