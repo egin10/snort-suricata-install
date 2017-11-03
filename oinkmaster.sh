@@ -14,10 +14,6 @@ sudo mkdir /etc/suricata/rules
 echo "*] Run oinkmaster to download rules ..."
 echo "*] Downloading ..."
 sudo oinkmaster -C /etc/oinkmaster.conf -o /etc/suricata/rules
-ls /etc/suricata/
-
-echo "*] Edit classification-file: /etc/suricata/rules/classification.config"
-echo "*] reference-config-file: /etc/suricata/rules/reference.config"
-sudo nano /etc/suricata/suricata.yaml
+ls /etc/suricata/rules
 
 echo "*] Done ..."
