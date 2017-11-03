@@ -40,16 +40,6 @@ broadcast 0.0.0.255
 # no gateway required
 post-up ethtool -K your-interface-to-local-A gro off
 post-up ethtool -K your-interface-to-local-A lro off
- 
-# Management Subnet (internal network, not routed)
-auto your-interface-to-local-B
-iface your-interface-to-local-B inet static
-address 0.0.0.0
-netmask 255.255.255.0
-network 0.0.0.0
-broadcast 0.0.0.255
-# no gateway
-# snort not processing traffic on this interface, so no need to disable LRO or GRO
 ```
 * Enable Kernel IP forwarding
 
@@ -86,6 +76,8 @@ add rules and look at /etc/snort/rules/
 
 # Suricata 4.0.1
 Under “vars” section, you will find several important variables used by Suricata. “HOME_NET” should point to the local network to be inspected by Suricata. “!$HOME_NET” (assigned to EXTERNAL_NET) refers to any other networks than the local network. “XXX_PORTS” indicates the port number(s) use by different services. Note that Suricata can automatically detect HTTP traffic regardless of the port it uses. So it is not critical to specify the HTTP_PORTS variable correctly.
+
+add rules by `suricata/rules.txt`
 
 ---
 

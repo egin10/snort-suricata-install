@@ -25,14 +25,7 @@ ls /etc/suricata/rules
 echo "*] Installing Oinkmaster ruleset ..."
 ./oinkmaster.sh
 
-echo "# Configure IP Address..."
-# sudo nano /etc/suricata/suricata.yaml
-nano suricata.yaml.in
-
 echo "# Configure /etc/suricata/suricata.yaml for IP Address, rules and Log ..."
-sudo cp suricata.yaml.in suricata.yaml
-sudo cp /etc/suricata/suricata.yaml /etc/suricata/suricata.yaml.save
-sudo rm -rf /etc/suricata/suricata.yaml
-sudo cp suricata.yaml /etc/suricata/suricata.yaml
+sudo nano /etc/suricata/suricata.yaml
 cd ..
 echo "*] Done ..."
