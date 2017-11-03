@@ -1,3 +1,11 @@
+# Dependencies
+* [Suricata](https://suricata-ids.org/)
+* [Snort](https://www.snort.org/)
+* [PulledPork](https://github.com/shirkdog/pulledpork)
+* [Oinkmaster](http://oinkmaster.sourceforge.net/about.shtml)
+
+---
+
 # How to Install :
 * `git clone https://github.com/egin10/snort-suricata-install.git`
 * `cd snort-suricata-install`
