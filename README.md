@@ -1,4 +1,4 @@
-#How to Install :
+# How to Install :
 * `git clone https://github.com/egin10/snort-suricata-install.git`
 * `cd snort-suricata-install`
 * `chmod +rx install.sh`
@@ -6,7 +6,7 @@
 
 ---
 
-#Snort 2.9.11
+# Snort 2.9.11
 * config interfaces
 
 ```
@@ -76,12 +76,12 @@ add rules and look at /etc/snort/rules/
 
 ---
 
-#Suricata 4.0.1
+# Suricata 4.0.1
 Under “vars” section, you will find several important variables used by Suricata. “HOME_NET” should point to the local network to be inspected by Suricata. “!$HOME_NET” (assigned to EXTERNAL_NET) refers to any other networks than the local network. “XXX_PORTS” indicates the port number(s) use by different services. Note that Suricata can automatically detect HTTP traffic regardless of the port it uses. So it is not critical to specify the HTTP_PORTS variable correctly.
 
 ---
 
-#PulledPork
+# PulledPork
 
 **Edit pulledpork.conf on line 19 & 26 and adding your oinkcode**
 Anywhere you see `<oinkcode>` enter the oinkcode you received from snort.org (if you didn’t get an oinkcode, you’ll need to comment out lines 19 and 26):
