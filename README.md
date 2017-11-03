@@ -45,7 +45,7 @@ broadcast 0.0.0.255
 ```
 * Enable Kernel IP forwarding
 
->un-comment
+un-comment
 ```
 #net.ipv4.ip_forward=1
 ```
